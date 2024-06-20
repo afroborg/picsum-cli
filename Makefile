@@ -3,5 +3,5 @@ TARGET = picsum-cli
 build:
 	@go build -o bin/$(TARGET)
 
-install:
+install: build
 	install bin/$(TARGET) /usr/local/bin
